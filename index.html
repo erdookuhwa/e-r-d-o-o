@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erdoo Kuhwa Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> <!-- link to normalize viewing across differen browsers -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  <!-- Link to fontawesome for social media connect -->
+
+    <!-- Fonts from googleapi -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="./images/erdoo_developer.jpg">
+
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home" class="nav__link">Home</a></li>
+            <li><a href="#about" class="nav__link">About</a></li>
+            <li><a href="#projects" class="nav__link">Projects</a></li>
+            <li><a href="#resume" class="nav__link">Resume</a></li>
+        </ul>
+    </nav>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Erdoo Kuhwa</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Full Stack Software Engineer</p>
+        <img src="images/erdoo_developer.jpg" alt="a pic of erdoo" class="intro__img">
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">About Me</h2>
+        <p class="section__subtitle section__subtitle--about">Developer in the Houston TX area</p>
+
+        <div class="about-me__body">
+            <p>I enjoy turning complex problems into simple, beautiful and intuitive interface designs. For me, my desire to learn how to code came from a place of wanting to always keep my mind engaged. It has been an interesting and never ending learning journey!</p>
+            <p>When I am not coding, I enjoy playing board games (Scrabble & Monopoly are my favorites!) and hiking.</p>
+            <p>I am currently available for hire. If you are interested in getting someone passionate and hardworking as an addition to your team, kindly reach out <a style="color:orange;" class="social-list__link" href="tel:+1-832-462-4469">
+                <i class="fas fa-mobile-alt"></i>
+                832-462-4469
+            </a> or 
+            <a style="color: orange;" class="social-list__link" href="mailto:erdoo.kuhwa@gmail.com" target="_blank">
+                <i class="far fa-envelope"></i>
+                erdoo.kuhwa@gmail.com
+            </a>
+
+            </p>
+        </div>
+        <img src="images/trad_dev.jpg" alt="erdoo smiling" class="about-me__img">
+    </section>
+
+    <!-- Projects -->
+    <section class="my-projects" id="projects">
+        <h2 class="section__title section__title--projects">Projects Done</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Nue Fashion Store</h3>
+                <p>An e-commerce app built using React and Redux for the front end, firebase for the backend and user authentication. Stripe API integrated for payments (test version only for now).</p>
+                <p>Used Sass and styled-components for more control of styling.</p>
+                <strong><em>View live Project: &emsp; </em></strong> <a href="https://nue-fashion-store.herokuapp.com/" target="_blank" class="btn">Nue Fashion Store</a>
+            </div> <!-- End project 1 -->
+
+            <div class="project">
+                <h3>Google Keep Clone</h3>
+                <p>I made this Google Keep Clone without any frameworks just purely JavaScript. Just like the actual app, my clone lets you create notes, change colors of your notes, saves them.</p>
+                <p>For styling, just regular CSS & HTML were enough. </p>
+                <strong><em>View live Project: &emsp; </em></strong> <a href="https://erdookuhwa.github.io/googleKeepClone/" target="_blank" class="btn">Google Keep Clone</a>
+            </div> <!-- End project 2 -->
+        </div> <!-- End projects part 1-->
+
+        <div class="projects">
+            <div class="project">
+                <h3>Movie Search App</h3>
+                <p>If you are anything like me and love to see good movies once in a while, then this simple React app allows you search for any movie and the app then makes a call to an API which then retrieves information relevant about the searched movie.</p>
+                <p>Features include intuitive UI, use of React's state management, JS async functions, error handling.</p>
+                <strong><em>View live Project: &emsp; </em></strong> <a href="https://erdoomoviedb.netlify.app/" target="_blank" class="btn">Movie Search App</a>
+            </div>
+
+            <!-- <div class="project">
+                <h3>React Quiz App</h3>
+                <p>React app for the frontend and firebase for the backend. This app let's you create your custom quiz, which is saved in realtime to firebase then presents you with a link to the quiz you just created so you can share with your friends.</p>
+                <p>The app keeps track of your scores and total number of people who have taken the quiz. Uses Chart.js library to provide your data visulization in the form of your performance in comparison with others.</p>
+                <strong><em>View live Project: &emsp; </em></strong> <a href="https://erdookuhwa.github.io/kweez" target="_blank" class="btn">React Quiz App</a>
+            </div> End project 3  -->
+
+            <div class="project">
+                <h3>Weather App</h3>
+                <p>Once again I put my JS skills to use in this app. The weather app has an input box where you can type in any city name, the app returns the weather at the time for that city with graphics representing the appropriate weather conditions for that city.</p>
+                <p>API calls, functional programming, DOM manipulation, use of tenary operations were necessary for building this app.</p>
+                <strong><em>View live Project: &emsp; </em></strong> <a href="https://erdookuhwa.github.io/weatherapp/" target="_blank" class="btn">Weather App</a>
+            </div> <!-- End project 4 -->
+        </div> <!-- End projects part 2 -->
+
+
+        <p style="text-align: center;">For project codes, please check out my github: 
+            <a style="color: orange;" class="social-list__link" href="https://github.com/erdookuhwa" target="_blank">
+                <i class="fab fa-github"></i>
+                https://github.com/erdookuhwa
+            </a>
+        </p>
+
+    </section>
+
+    <!-- Resume -->
+    <section class="resume" id="resume">
+        <h2 class="section__title section__title--resume">Resume</h2>
+        <hr />
+        <div class="resume__personal">
+            <p><strong>Erdoo Kuhwa</strong></p>
+            <a href="Erdoo_2021.pdf" target="_blank" class="btn"> Download Resume</a>
+        </div>
+        <hr />
+        <div class="resume__summary">
+            <h3 class="resume__title">Executive Briefing</h3>
+            <p>Results driven Software Developer with 5+ years hands-on experience. Proficient in translating designs and wireframes into high-quality code, writing application interface code via JavaScript and ReactJS workflows. Adept at monitoring and maintaining frontend performance and troubleshooting & debugging the same to bolster overall performance.</p>
+        </div>
+        <hr />
+        <div class="skills">
+            <h3 class="resume__title">Skills</h3>
+            <ul>
+                <li>UI Design</li>
+                <li>Webpage Optimization</li>
+                <li>Front-end Architecture</li>
+                <li>Performance Improvement</li>
+                <li>Webpage Design</li>
+                <li>Debugging</li>
+                <li>Project Delivery</li>
+                <li>Feature Design</li>
+            </ul>
+        </div>
+        <hr />
+        <div class="experience">
+            <h3 class="resume__title">Professional Experience</h3>
+            <h4>Nue IT Solutions</h4>
+                <span><em>React Developer</em></span>
+            <ul>
+                <li>Developing and implementing  highly-responsive user interface components using React concepts</li>
+                <li>Identifying web-based user interactions</li>
+                <li>Troubleshooting interface software and debugging application codes</li>
+                <li>Developing user facing features using ReactJS and building reusable components and frontend libraries for future use</li>
+                <li>Optimizing components for maximum performance across a vast array of web capable devices and browsers</li>
+                <li>Documenting application changes and developing updates</li>
+            </ul>
+            <hr />
+            <h4>DNV GL</h4>
+                <span><em>Application Support Engineer</em></span>
+            <ul>
+                <li>Performed analyses on software application and functionality suggesting improvements</li>
+                <li>Troubleshot interface software and debugged application codes to improve functionality performance by 30%</li>
+                <li>Established the root causes of application errors and escalated serious concerns</li>
+                <li>Developed and implanted frontend architecture to support user interface concepts with 100% accuracy</li>
+                <li>Monitored and improved frontend performance by 15% and documented application changes and also worked on updates</li>
+                <li>Consulted with the software development team, internal users, and clients to improve application performance</li>
+                <li>Provided frontend support to internal departments and web-based clients</li>
+                <li>Reviewed application requirements and interface design to ensure compatibility with existing applications</li>
+            </ul>
+            <hr />
+            <h4>Industrial Information Resources</h4>
+                <span><em>Front End Developer</em></span>
+            <ul>
+                <li>Determined the structure and design of webpages based on user requirements and balanced functional & aesthetic designs</li>
+                <li>Created features to enhance the user experience while ensuring that the web design is optimized for mobile devices</li>
+                <li>Employed a variety of languages such as HTML and CSS to write and create user friendly web pages</li>
+                <li>Built reusable code for future use and optimized web pages for different apps for maximum speed and scalability</li>
+                <li>Managed brand consistency throughout the design, maintained and improved the company website by adding more features and functionalities</li>
+                <li>Engaged cross functional teams to ensure that clients' projects were completed on time and within stipulated budget</li>
+                <li>Produced high quality mock-ups and designed different prototypes and provided high quality graphics and visual elements</li>
+            </ul>
+            <hr />
+            <h4>Layer3 Ltd</h4>
+                <span><em>Web Developer</em></span>
+            <ul>
+                <li>Discussed front end UI/UX suggestions with customers to improve and better understand customer requirements before implementation</li>
+                <li>Liaised with project manager to determine project scope and project timeline which were rigorously adhered to without overspill</li>
+                <li>Collaborated with other front and back end developers on customer needs using git for code base version management</li>
+            </ul>
+        </div>
+        <hr />
+        <div class="education">
+            <h3 class="resume__title">Education</h3>
+            <div class="tab">
+                <p>Full Stack Immersive Software Engineering <br> <em>Byte Academy</em> </p>
+                <p class="dates">October 2020</p>
+            </div>
+            
+            <div class="tab">
+                <p>Master of Science: Industrial/Engineering Management<br> <em>University of Houston - Clear Lake</em> </p>
+                <p class="dates">December 2017</p>
+            </div>
+            
+            <div class="tab">
+                <p>Bachelor of Engineering: Electrical and Electronics Engineering<br> <em>University of Agriculture</em> </p>
+                <p class="dates">April 2013 </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- <a href="mailto:erdoo.kuhwa@gmail.com" class="footer-link">erdoo.kuhwa@gmail.com</a> -->
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/erdookuhwa" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="mailto:erdoo.kuhwa@gmail.com" target="_blank">
+                    <i class="far fa-envelope"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.hackerrank.com/erdoo_kuhwa" target="_blank">
+                    <i class="fab fa-hackerrank"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    
+    <script src="index.js"></script>
+</body>
+</html>
