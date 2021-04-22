@@ -165,7 +165,7 @@ h4 {
 
 .navbar li {
     display: inline-block;
-    float: left;
+    float: right;
     padding: 0 12px;
 }
 
@@ -185,7 +185,7 @@ h4 {
 @media only screen and (max-width: 320px) {
     .navbar ul li {
         display: inline-block;
-        float: left;
+        float: right;
         padding: 0 5px;
     }
 
