@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Kaushan+Script|Oswald&display=swap');
+
 *,
 *::before,
 *::after {
@@ -25,6 +27,16 @@
           01.125em 01.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
+[data-theme="dark"] {
+    --primary-color: rgb(150, 65, 255);
+    --primary-variant: #6c63ff;
+    --secondary-color: #03dac5;
+    --on-primary: #000;
+    --on-background: rgba(255, 255, 255, 0.9);
+    --on-background-alt: rgba(255, 255, 255, 0.7);
+    --background: #121212;
+  }
+
 @media (min-width: 800px) {
     :root {
         --fs-h1: 4.5rem;
@@ -37,6 +49,7 @@
 /* General styles */
 html {
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body {
@@ -50,6 +63,7 @@ body {
 
 section {
     padding: 10em 2em;
+    min-height: 100vh;
 }
 
 img {
@@ -80,6 +94,78 @@ strong {
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
+}
+
+/* Dark Mode Toggle */
+.theme-switch-wrapper {
+    /* display: flex; */
+    align-items: center;
+    z-index: 1000;
+    float: left;
+    position: fixed;
+    right: 1600px;
+    top: 10px;
+}
+
+.theme-switch-wrapper span {
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.toggle-text {
+    position: relative;
+    top: -4px;
+    right: 5px;
+    color: var(--clr-dark);
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.theme-switch input {
+    display: none;
+}
+  
+  .slider {
+    background: #000;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+}
+
+.slider::before {
+    background: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    width: 26px;
+}
+  
+input:checked + .slider {
+    background: var(--primary-color);
+}
+  
+input:checked + .slider::before {
+    transform: translateX(26px);
+}
+  
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round::before {
+    border-radius: 50%;
 }
 
 .btn:hover,
@@ -125,10 +211,10 @@ h4 {
     display: block;
 }
 
-.section__subtitle {
+/* .section__subtitle {
     margin: 0;
     font-size: var(--fs-h3);
-}
+} */
 
 .section__subtitle--intro,
 .section__subtitle--about {
@@ -153,7 +239,7 @@ h4 {
     flex-direction: column;
     height: 60px;
     padding: 1em;
-    z-index: 300;
+    z-index: 30;
 }
 
 .navbar ul {
@@ -236,6 +322,8 @@ h4 {
 /* Intro section */
 .intro {
     position: relative;
+    max-width: 100vw;
+    margin: 0 auto;
 }
 
 .intro__img {

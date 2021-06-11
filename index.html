@@ -17,6 +17,19 @@
 
 </head>
 <body>
+
+    <!-- Dark Mode Switch -->
+    <div class="theme-switch-wrapper">
+        <span id="toggle-icon">
+            <span class="toggle-text">Light Mode</span>
+            <i class="fas fa-sun"></i>
+        </span>
+        <label class="theme-switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+        </label>
+    </div>
+
     <nav class="navbar">
         <ul>
             <li><a href="#resume" class="nav__link">Resume</a></li>
@@ -78,10 +91,9 @@
 
         <div class="projects">
             <div class="project">
-                <h3>Movie Search App</h3>
-                <p>If you are anything like me and love to see good movies once in a while, then this simple React app allows you search for any movie and the app then makes a call to an API which then retrieves information relevant about the searched movie.</p>
-                <p>Features include intuitive UI, use of React's state management, JS async functions, error handling.</p>
-                <strong><em>View live Project: &emsp; </em></strong> <a href="https://erdoomoviedb.netlify.app/" target="_blank" class="btn">Movie Search App</a>
+                <h3>Find Face App</h3>
+                <p>This is a full stack application built using node environment with express for routing and postgres for the database. Functionalities include authentication for handling log in and sign up, knex.js handles the SQL connection to the database. The front end of this app is developed with React and Particle js library for visual effect. The app uses Clarifai's API for human face detection. An image URL is provided in the input and app is able to detect human face and keeps track of the number of entries made by a user.</p>
+                <strong><em>View live Project: &emsp; </em></strong> <a href="https://find-face-api.herokuapp.com/" target="_blank" class="btn">Find Face App</a>
             </div> <!-- End project 3 -->
 
             <div class="project">
@@ -91,6 +103,25 @@
                 <strong><em>View live Project: &emsp; </em></strong> <a href="https://erdookuhwa.github.io/weatherapp/" target="_blank" class="btn">Weather App</a>
             </div> <!-- End project 4 -->
         </div> <!-- End projects part 2 -->
+
+        <!-- <div class="projects">
+            <div class="project">
+                <h3>Movie Search App</h3>
+                <p>If you are anything like me and love to see good movies once in a while, then this simple React app allows you search for any movie and the app then makes a call to an API which then retrieves information relevant about the searched movie.</p>
+                <p>Features include intuitive UI, use of React's state management, JS async functions, error handling.</p>
+                <strong><em>View live Project: &emsp; </em></strong> <a href="https://erdoomoviedb.netlify.app/" target="_blank" class="btn">Movie Search App</a>
+            </div>  -->
+            <!-- End project 3 -->
+
+            <!-- <div class="project">
+                <h3>Weather App</h3>
+                <p>Once again I put my JS skills to use in this app. The weather app has an input box where you can type in any city name, the app returns the weather at the time for that city with graphics representing the appropriate weather conditions for that city.</p>
+                <p>API calls, functional programming, DOM manipulation, use of tenary operations were necessary for building this app.</p>
+                <strong><em>View live Project: &emsp; </em></strong> <a href="https://erdookuhwa.github.io/weatherapp/" target="_blank" class="btn">Weather App</a>
+            </div>  -->
+            <!-- End project 4 -->
+        <!-- </div>  -->
+        <!-- End projects part 3 -->
 
         <div class="projects">
             <div class="project">
@@ -114,7 +145,7 @@
                 <strong><em>View live Project: &emsp; </em></strong> <a href="https://erdookuhwa.github.io/kweez" target="_blank" class="btn">React Quiz App</a>
             </div> End project # -->
 
-        </div> <!-- End projects part 3-->
+        </div> <!-- End projects part 4-->
 
 
         <p style="text-align: center;">For project codes, please check out my github: 
