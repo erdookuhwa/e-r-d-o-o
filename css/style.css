@@ -448,6 +448,45 @@ h4 {
     /* text-align: justify; */
 }
 
+/* Styling Mobile Projects */
+.my-projects-mobile {
+    background-color: var(--clr-dark);
+    background-image: url(../images/portfolio-04.jpg);
+    /* background-size: cover; */
+    background-blend-mode: darken;
+    /* background-blend-mode: multiply; Use this to make background darker and text more legible */
+    color: var(--clr-light);
+    text-align: center;
+    padding: 3em;
+    min-height: auto;
+}
+
+.section__title--projects-mobile {
+    color: var(--clr-accent);
+    font-family: cursive;
+    /* position: relative; */
+}
+
+.section__title--projects-mobile::after {
+    content: ''; /* for sudo contents, they will not appear if content is not given */
+    display: block;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: currentColor; /* currentColor will use whatever color I picked for the title color */
+    opacity: 0.5;
+}
+
+.projects {
+    display: block;
+}
+
+.project-mobile {
+    flex: 100%;
+    /* max-width: 500px; */
+    margin: 0 0 3em 0;
+    /* text-align: justify; */
+}
+
 /* For larger screen sizes */
 @media (min-width: 800px) {
     .projects {
