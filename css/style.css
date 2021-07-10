@@ -516,6 +516,7 @@ h4 {
     padding: 3em 30px;
     text-align: center;
     box-sizing: border-box;
+    /* min-height: 30vh; */
 }
 
 .resume__summary p {
